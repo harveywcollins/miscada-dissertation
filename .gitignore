@@ -1,0 +1,26 @@
+# .gitignore
+
+# OS file 
+.DS_Store
+Thumbs.db
+
+#Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+#C++/Build
+build/
+*.o
+*.out
+*.exe
+
+#Data
+data/*.npy
+
+#Report
+*.aux
+*.log
+
+#Other
+*.swp
