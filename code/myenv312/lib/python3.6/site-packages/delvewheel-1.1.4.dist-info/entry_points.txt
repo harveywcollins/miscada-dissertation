@@ -1,0 +1,2 @@
+[console_scripts]
+delvewheel = delvewheel.__main__:main

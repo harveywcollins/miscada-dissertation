@@ -1,0 +1,30 @@
+Copyright (C) 2024, Advanced Micro Devices. All rights reserved.
+
+AOCL DA - Release Notes - AOCL version 5.0.0
+----------------------------------------------
+
+AOCL DA Contents
+--------------------
+AOCL-DA is a new data analytics library providing optimized building blocks for data analysis and classical machine learning. 
+
+The following key functionality is available in AOCL-DA: 
+
+  - Loading data from memory by reading CSV files 
+  - Preprocessing data by removing missing values, standardizing and selecting subsets of data 
+  - Processing data (using, e.g. principal component analysis, linear models etc.) 
+
+AOCL-DA can be called in the following ways: 
+
+  - Using the C-compatible interface to enable seamless integration with multiple programming languages 
+  - Using C++ overloads for increased data abstraction 
+  - Using the Python API 
+  - Using the scikit-learn patch to enable existing scikit-learn users to benefit from AOCL-DA’s performance with minimal code changes 
+
+The following data processing algorithms are available at 5.0: 
+  - Linear models, including logistic regression, lasso and ridge regression 
+  - k-means clustering 
+  - principal component analysis and singular value decomposition 
+  - k-nearest neighbors 
+  - decision trees and random forests 
+  - nonlinear least squares fitting 
+  - basic statistics

@@ -1,0 +1,39 @@
+################################################################################
+INSTALLING AOCL BINARY PACKAGES
+################################################################################
+
+1. Use the command tar -xvf <aocl-linux-<compiler>-5.0.0.tar.gz> to untar the 
+   package.
+
+2. The installer file install.sh is available in aocl-linux-<compiler>-5.0.0.
+
+3. Run ./install.sh to install the AOCL package (all libraries) to the default 
+   INSTALL_PATH: /home/<username>/aocl/5.0.0/<compiler>, where the compiler 
+   value is aocc or gcc.
+
+4. To install the AOCL package in a custom location, use the installer with 
+   the option: -t <CUSTOM_PATH>.
+   For example, ./install.sh -t /home/<username>.
+
+5. The master installer can also be used to install individual library out of 
+   the master package.
+    – To install a specific library, use the option -l followed by the 
+      library name.
+      For example, ./install.sh -l blis
+      The library names that have been used are fftw, libm, crypto, libmem, 
+      blis, libflame, scalapack, rng, secrng, sparse and utils.
+    – You can also install the individual library in a path of your choice.
+      For example, ./install.sh -t /home/amd -l blis
+
+6. Use -h option for "USAGE" help to be printed with all the supported options.
+
+7. To change the default library path to ILP64 / LP64, copy the script 
+   set_aocl_interface_symlink.sh to the <AOCL INSTALL PATH> and run
+    – cd <AOCL INSTALL PATH>
+    – bash set_aocl_interface_symlink.sh <ilp64/lp64>
+
+8. Please untar the package 
+   aocl-libmem-avx512-linux-<compiler name>-<release-version>.tar.gz manually 
+   to use libmem AVX512 binaries to support Zen4 architecture.
+
+Refer to the AOCL User Guide in "Chapter 3 - Installing AOCL" for detailed steps.
