@@ -4,23 +4,32 @@
 .DS_Store
 Thumbs.db
 
-#Python
+# Python
 __pycache__/
 *.py[cod]
 *.ipynb_checkpoints
 
-#C++/Build
+# C++/Build
 build/
 *.o
 *.out
 *.exe
 
-#Data
-data/*.npy
+# Virtual environments
+code/myenv312/
 
-#Report
+# Data
+data/
+data/*.npy
+data/*.zip
+data/*.tar.gz
+
+# Report
 *.aux
 *.log
 
-#Other
-*.swpcode/myenv312/
+# Other
+*.swp
+
+# Environment
+.env
