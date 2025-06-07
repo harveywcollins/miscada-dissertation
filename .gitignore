@@ -33,3 +33,6 @@ data/*.tar.gz
 
 # Environment
 .env
+
+# Benchmark output directories
+code/benchmarks/*_strongscaling/
