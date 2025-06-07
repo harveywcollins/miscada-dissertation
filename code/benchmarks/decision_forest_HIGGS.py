@@ -13,15 +13,17 @@ data = np.loadtxt(csv_path, delimiter=",", dtype=np.float32)
 X = data[:, :-1]
 y = data[:, -1].astype(np.int32)
 
+n_samples, n_features = X.shape
+
 # Train the AOCL-DA Decision Forest
 clf = decision_forest(
-    n_estimators=100,
-    maximum_depth=15,
-    minimum_samples_split=5,
-    minimum_samples_leaf=2,
-    max_features=0.7,
+    n_trees=100,
+    max_depth=10,
+    min_samples_split=5,
+    criterion="cross-entropy",
     seed=42,
-    scoring_function="entropy"
+    features_selection="custom",
+    max_features=int(np.sqrt(n_features))
 )
 
 t0 = time.time()
