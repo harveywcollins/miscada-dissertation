@@ -36,5 +36,14 @@ data/*.tar.gz
 
 # Benchmark output directories
 code/benchmarks/*_strongscaling/
+<<<<<<< HEAD
+=======
+
+# Benchmark data files (large)
+>>>>>>> 5520e9d676a889a9b6e6288b5c919ba1059c24f0
 code/benchmarks_baseline/*.data*
 code/benchmarks_improved/*.data*
+code/benchmarks_baseline/perf.data.old
+code/benchmarks_baseline/perf_higgs.data
+code/benchmarks_improved/perf.data.old
+code/benchmarks_improved/perf_higgs.data
