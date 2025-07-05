@@ -1,0 +1,15 @@
+AOCL-DA Decision Forest on MNIST
+Training time: 3.68565 s
+Test accuracy: 0.9643
+
+ Performance counter stats for './mnist_forest':
+
+    28,498,148,638      branches:u                                                  
+       807,851,724      branch-misses:u           #    2.83% of all branches        
+
+      10.550958196 seconds time elapsed
+
+     268.458703000 seconds user
+       8.049178000 seconds sys
+
+

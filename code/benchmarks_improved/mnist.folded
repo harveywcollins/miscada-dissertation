@@ -1,0 +1,188 @@
+python3;PyMem_RawMalloc 1
+python3;PyParser_AddToken 26611515
+python3;PyUnicode_DecodeUTF8Stateful 23138827
+python3;[libpthread-2.28.so] 3
+python3;[libpython3.6m.so.1.0] 51472438
+python3;[libpython3.6m.so.1.0];PyObject_GetItem 25968761
+python3;[libpython3.6m.so.1.0];[libpython3.6m.so.1.0] 200199501
+python3;[libpython3.6m.so.1.0];[unknown];PyUnicode_InternInPlace 184
+python3;[libpython3.6m.so.1.0];_PyEval_EvalFrameDefault 27596261
+python3;[unknown];[_aoclda.cpython-36m-x86_64-linux-gnu.so];[_aoclda.cpython-36m-x86_64-linux-gnu.so];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::set_training_data;da_dynamic_dispatch_generic::da_utils::copy_transpose_2D_array_row_to_column_major<float> 176409455
+python3;[unknown];[libm-2.28.so] 11431590390
+python3;[unknown];[libm-2.28.so];[unknown];[unknown];[unknown] 32432415
+python3;[unknown];[libpython3.6m.so.1.0] 20735188
+python3;[unknown];[libpython3.6m.so.1.0];[libpython3.6m.so.1.0] 33386041
+python3;[unknown];[unknown];[libc-2.28.so];[unknown];[unknown];[unknown];[_aoclda.cpython-36m-x86_64-linux-gnu.so];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::predict;da_dynamic_dispatch_generic::da_utils::copy_transpose_2D_array_row_to_column_major<float> 245954871
+python3;[unknown];[unknown];[unknown];__memset_avx2_unaligned_erms 33078224
+python3;[unknown];[unknown];[unknown];cfree@GLIBC_2.2.5 33001485
+python3;[unknown];[unknown];[unknown];std::vector<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::allocator<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > > >::_M_default_append 131120181
+python3;[unknown];[unknown];boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown] 33122800
+python3;[unknown];[unknown];getenv 114658
+python3;[unknown];[unknown];std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*> 32818397
+python3;[unknown];__clone 18
+python3;[unknown];__clone;[unknown] 3
+python3;[unknown];__clone;[unknown];[unknown] 1
+python3;[unknown];__clone;[unknown];[unknown];[unknown] 2
+python3;[unknown];__clone;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+python3;[unknown];__lll_lock_wait;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 86720
+python3;[unknown];__lll_lock_wait;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 22343
+python3;[unknown];__lll_unlock_wake;[unknown];[unknown];[unknown];[unknown] 271
+python3;[unknown];__lll_unlock_wake;[unknown];[unknown];[unknown];[unknown];[unknown] 20111
+python3;[unknown];__memmove_avx_unaligned_erms 125136407
+python3;[unknown];__memmove_avx_unaligned_erms;[unknown];[unknown];[unknown];[unknown] 33395857
+python3;[unknown];__memset_avx2_unaligned_erms 626206854
+python3;[unknown];__memset_avx2_unaligned_erms;[unknown];[unknown];[unknown];[unknown] 835706271
+python3;[unknown];__pthread_mutex_lock 49261576
+python3;[unknown];__pthread_mutex_unlock 17951774
+python3;[unknown];__pthread_mutex_unlock_usercnt 1
+python3;[unknown];__sched_yield 1112297691
+python3;[unknown];__sched_yield;[unknown] 1162816011
+python3;[unknown];__sched_yield;[unknown];[unknown] 663419043
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown] 230339951
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown] 490359471
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown] 54415837
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 34647335
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 3974922
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 7906449
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 4048910
+python3;[unknown];__sched_yield;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 9272675
+python3;[unknown];__strchr_avx2 1
+python3;[unknown];__strlen_avx2 31817837
+python3;[unknown];blas_memory_alloc 10938937
+python3;[unknown];blas_memory_alloc;[unknown] 65763
+python3;[unknown];blas_memory_alloc@plt 147
+python3;[unknown];blas_memory_free 7896197
+python3;[unknown];blas_thread_server 1293617597
+python3;[unknown];blas_thread_server;[unknown];[unknown] 219
+python3;[unknown];boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 330046100703
+python3;[unknown];boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown] 1025637676
+python3;[unknown];boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown];[unknown];[unknown] 231165371
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 26674234727
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown] 33329872
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples 16597778942
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;[libstdc++.so.6.0.29] 66009423
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;[unknown] 164145907
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;[unknown];[unknown];[unknown];[unknown] 30790876
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 65368108
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;__memset_avx2_unaligned 33124125
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;__memset_avx2_unaligned_erms 263398443
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::pdqsort_detail::pdqsort_loop<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 5515967100
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 623480751092
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown] 1281917414
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown];[unknown];[unknown] 198742724
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown];[unknown];[unknown];[unknown] 131962210
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 33269739
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::spreadsort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 3294043258
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::spreadsort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;[unknown];[unknown];[unknown] 33203410
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;std::vector<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::allocator<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > > > >::_M_default_append 33098333
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 33118820
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;cfree@GLIBC_2.2.5 132960434
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::~decision_tree;[unknown];da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;operator delete 198563271
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::entropy_score<float> 9243809397
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::entropy_score<float>;[unknown] 33315186
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::~random_forest;[unknown];[unknown];GOMP_parallel;gomp_barrier_wait_end 61933261
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::~random_forest;[unknown];[unknown];GOMP_parallel;gomp_team_start 30540104
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::~random_forest;[unknown];[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::parallel_count_classes 161702936
+python3;[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::~random_forest;[unknown];[unknown];da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::parallel_count_classes;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::predict 7671933602
+python3;[unknown];getenv 1
+python3;[unknown];gomp_barrier_wait_end 12077538289
+python3;[unknown];gomp_barrier_wait_end;[unknown] 32374024
+python3;[unknown];gomp_barrier_wait_end;[unknown];[unknown];[unknown] 33508711
+python3;[unknown];gomp_init_affinity 1
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;__memmove_avx_unaligned 200598201
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::add_node 31474855
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::find_best_split 33430354
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit 197588747
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::add_node 66734061
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::resize_tree 33270326
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::partition_samples 3657308570
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples 33260023
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;memmove@plt 33444577
+python3;[unknown];gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&> 32880115
+python3;[unknown];log2f@plt 32753499
+python3;[unknown];operator new 66222369
+python3;[unknown];start_thread;[unknown] 1
+python3;[unknown];std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 63371875
+python3;[unknown];strcmp 26843495
+python3;_IO_file_open 1
+python3;_IO_file_underflow@@GLIBC_2.2.5 82597
+python3;__GI___libc_open;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 40260767
+python3;__GI___tunables_init 2633115
+python3;__clone 7435
+python3;__clone;[unknown] 4
+python3;__clone;[unknown];[unknown];[unknown] 52
+python3;__clone;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 54
+python3;__ctype_init 3280610
+python3;__ctype_init;[unknown] 229
+python3;__ctype_init;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+python3;__dynamic_cast 27814326
+python3;__memmove_avx_unaligned 98913111
+python3;__memset_avx2_unaligned 33133607
+python3;__mmap 6654768
+python3;__mmap;[unknown];[unknown];[unknown] 78133
+python3;__mmap;[unknown];[unknown];[unknown];[unknown] 51249
+python3;__mmap;[unknown];[unknown];[unknown];[unknown];[unknown] 72216
+python3;__mmap;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 182009
+python3;__mmap;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 220438
+python3;__mmap;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 41670
+python3;__pthread_enable_asynccancel 159
+python3;__pthread_mutex_cond_lock 18714
+python3;__sigjmp_save 31992
+python3;__sigsetjmp 63340
+python3;__sigsetjmp;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 175
+python3;_dl_start_user;_dl_start;[unknown] 50
+python3;_dl_start_user;_dl_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 9434
+python3;_dl_start_user;_dl_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+python3;_int_malloc 131150572
+python3;_setjmp 147338
+python3;_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+python3;alloc_mmap 12862235
+python3;blas_memory_alloc 20159430
+python3;blas_thread_server 80695
+python3;blas_thread_server;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 74578
+python3;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 131427576
+python3;boost::sort::spreadsort::detail::spreadsort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 2498187906
+python3;cfree@GLIBC_2.2.5 31906354
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::count_class_occurences 4770084863
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::count_class_occurences;[unknown] 32242404
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::count_class_occurences;[unknown];[unknown];[unknown] 33418179
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::find_best_split 25609996613
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::find_best_split;[unknown];[unknown];[unknown] 28599548
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit 228939412
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::add_node 32923987
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::get_next_node_idx 33287582
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::partition_samples 988815832
+python3;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::sort_samples;boost::sort::spreadsort::detail::float_sort<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float>;boost::sort::spreadsort::detail::float_sort_rec<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int, da_dynamic_dispatch_generic::da_decision_forest::boost_sort_samples<float> 148871521
+python3;da_dynamic_dispatch_generic::da_decision_forest::entropy_score<float> 431344742
+python3;do_lookup_x 25876552
+python3;gomp_affinity_init_level_1.isra.0 157
+python3;gomp_barrier_wait 1004
+python3;gomp_barrier_wait_end 19043619775
+python3;gomp_barrier_wait_end;[unknown];[unknown];[unknown] 69388
+python3;gomp_barrier_wait_end;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 17113972
+python3;gomp_team_barrier_wait_end 13243078236
+python3;gomp_team_barrier_wait_end;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 32991926
+python3;gomp_thread_start 3847949
+python3;gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::count_class_occurences 32983248
+python3;gomp_thread_start;da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit;da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::partition_samples 296613987
+python3;malloc 82709860
+python3;operator delete 745912446
+python3;operator new 803000073
+python3;pthread_cond_wait@@GLIBC_2.3.2 6
+python3;pthread_cond_wait@@GLIBC_2.3.2;[unknown];[unknown];[unknown] 2
+python3;pthread_cond_wait@@GLIBC_2.3.2;[unknown];[unknown];[unknown];[unknown] 230
+python3;realloc 40689784
+python3;sse2_binary_scalar2_divide_FLOAT 55874620
+python3;start_thread 79672
+python3;start_thread;[unknown] 97
+python3;start_thread;[unknown];[unknown] 2605558
+python3;start_thread;[unknown];[unknown];[unknown] 5
+python3;start_thread;[unknown];[unknown];[unknown];[unknown] 269
+python3;start_thread;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+python3;std::_Function_handler<float  329680806
+python3;std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand 164246709
+python3;std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>::_M_gen_rand@plt 33307722
+python3;std::shuffle<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::mersenne_twister_engine<unsigned long, 32ul, 624ul, 397ul, 31ul, 2567483615ul, 11ul, 4294967295ul, 7ul, 2636928640ul, 15ul, 4022730752ul, 18ul, 1812433253ul>&> 1458704932
+python3;std::uniform_int_distribution<unsigned long>::operator 1128646289
+python3;std::vector<da_dynamic_dispatch_generic::da_decision_forest::node<float>, std::allocator<da_dynamic_dispatch_generic::da_decision_forest::node<float> > >::_M_default_append 159266724
+python3;std::vector<da_dynamic_dispatch_generic::da_decision_forest::node<float>, std::allocator<da_dynamic_dispatch_generic::da_decision_forest::node<float> > >::_M_default_append;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 33119404

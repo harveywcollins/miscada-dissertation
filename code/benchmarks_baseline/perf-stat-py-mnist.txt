@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "decision_forest_MNIST.py", line 8, in <module>
+    from aoclda.decision_forest import decision_forest
+  File "/home/wsgp73/miscada-dissertation/code/myenv312/lib64/python3.6/site-packages/aoclda/decision_forest.py", line 32, in <module>
+    from ._aoclda.decision_forest import pybind_decision_forest
+ImportError: /lib64/libstdc++.so.6: version `GLIBCXX_3.4.29' not found (required by /home/wsgp73/miscada-dissertation/code/myenv312/lib64/python3.6/site-packages/aoclda/_aoclda.cpython-36m-x86_64-linux-gnu.so)
+
+ Performance counter stats for 'python decision_forest_MNIST.py':
+
+     2,555,370,385      cycles:u                                                    
+       999,023,610      instructions:u            #    0.39  insn per cycle         
+
+       0.137023921 seconds time elapsed
+
+       1.400920000 seconds user
+       5.083300000 seconds sys
+
+
