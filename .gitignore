@@ -37,3 +37,4 @@ data/*.tar.gz
 # Benchmark output directories
 code/benchmarks/*_strongscaling/
 code/benchmarks_baseline/*.data*
+code/benchmarks_improved/*.data*
