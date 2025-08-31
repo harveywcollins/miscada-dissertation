@@ -1,0 +1,3 @@
+[ perf record: Woken up 1 times to write data ]
+[ perf record: Captured and wrote 0.014 MB perf.data (116 samples) ]
+/var/spool/slurmd/job13792453/slurm_script: line 40: 752266 Segmentation fault      perf record -F 99 -g -o perf.data -- ./mnist_forest_dbg

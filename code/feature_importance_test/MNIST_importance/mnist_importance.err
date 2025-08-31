@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "extract_importance.py", line 52, in <module>
+    importance_map = feature_importances.reshape(28, 28)
+ValueError: cannot reshape array of size 0 into shape (28,28)

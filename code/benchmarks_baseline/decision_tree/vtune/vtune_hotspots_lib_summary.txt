@@ -1,0 +1,25 @@
+Elapsed Time: 1.117s
+
+Top Hotspots
+Function  Module  CPU Time  % of CPU Time(%)
+--------  ------  --------  ----------------
+Collection and Platform Info
+    Application Command Line: ./mnist_forest_dbg 
+    Operating System: 4.18.0-553.34.1.el8_10.x86_64 \S Kernel \r on an \m 
+    Computer Name: cn120.ham8.dur.ac.uk
+    Result Size: 3.7 MB 
+    Collection start time: 12:44:21 08/07/2025 UTC
+    Collection stop time: 12:44:23 08/07/2025 UTC
+    Collector Type: User-mode sampling and tracing
+    CPU
+        Name: Unknown
+        Frequency: 1.996 GHz
+        Logical CPU Count: 128
+        Cache Allocation Technology
+            Level 2 capability: not detected
+            Level 3 capability: available
+
+If you want to skip descriptions of detected performance issues in the report,
+enter: vtune -report summary -report-knob show-issues=false -r <my_result_dir>.
+Alternatively, you may view the report in the csv format: vtune -report
+<report_name> -format=csv.

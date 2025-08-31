@@ -1,0 +1,5 @@
+decision_forest_mnist_likwid.cpp:1:10: fatal error: aoclda.h: No such file or directory
+    1 | #include "aoclda.h"
+      |          ^~~~~~~~~~
+compilation terminated.
+/var/spool/slurmd/job13792228/slurm_script: line 36: ./mnist_forest: No such file or directory

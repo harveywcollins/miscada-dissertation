@@ -1,0 +1,15 @@
+-r
+/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/vtune/vtune_mem_mnist
+--stack-stitching
+--data-limit-mb=1000
+--disk-space-limit=0
+--mrte-type=java,python
+--type=memory
+--memory-strategy=obj-size-min=32,hash-table-size=0
+--stack-unwind-limit=8388608
+--itt-config=frame
+--itt-config=task,event,counter
+--stackwalk=offline
+--mrte-mode=auto
+--
+./mnist_forest_dbg

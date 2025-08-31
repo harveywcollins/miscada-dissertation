@@ -1,0 +1,548 @@
+mnist_forest_db 752267 15053187.078846:          1 cycles:u: 
+	ffffffffb4e0f2d7 [unknown] ([unknown])
+	ffffffffb4703992 [unknown] ([unknown])
+	ffffffffb4706b41 [unknown] ([unknown])
+	ffffffffb4708dc6 [unknown] ([unknown])
+	ffffffffb4484224 [unknown] ([unknown])
+	ffffffffb46e6a89 [unknown] ([unknown])
+	ffffffffb46e9392 [unknown] ([unknown])
+	ffffffffb46e95da [unknown] ([unknown])
+	ffffffffb4482b34 [unknown] ([unknown])
+	ffffffffb4482dc7 [unknown] ([unknown])
+	ffffffffb50011fe [unknown] ([unknown])
+	    7ff266969ee0 _start+0x0 (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.078870:          1 cycles:u: 
+	ffffffffb4714f11 [unknown] ([unknown])
+	ffffffffb46e63b9 [unknown] ([unknown])
+	ffffffffb46e9392 [unknown] ([unknown])
+	ffffffffb46e95da [unknown] ([unknown])
+	ffffffffb4482b34 [unknown] ([unknown])
+	ffffffffb4482dc7 [unknown] ([unknown])
+	ffffffffb50011fe [unknown] ([unknown])
+	    7ff26696abe8 _dl_start+0x28 (/usr/lib64/ld-2.28.so)
+	    7ff266969ee8 _dl_start_user+0x0 (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.078876:         52 cycles:u: 
+	ffffffffb46a447e [unknown] ([unknown])
+	ffffffffb46a4ed0 [unknown] ([unknown])
+	ffffffffb46a6590 [unknown] ([unknown])
+	ffffffffc06818bc [unknown] ([unknown])
+	ffffffffb46e1088 [unknown] ([unknown])
+	ffffffffb46e63c1 [unknown] ([unknown])
+	ffffffffb46e9392 [unknown] ([unknown])
+	ffffffffb46e95da [unknown] ([unknown])
+	ffffffffb4482b34 [unknown] ([unknown])
+	ffffffffb4482dc7 [unknown] ([unknown])
+	ffffffffb50011fe [unknown] ([unknown])
+	    7ff26696ac00 _dl_start+0x40 (/usr/lib64/ld-2.28.so)
+	    7ff266969ee8 _dl_start_user+0x0 (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.078885:      11522 cycles:u: 
+	ffffffffb46a344d [unknown] ([unknown])
+	ffffffffb46e69c0 [unknown] ([unknown])
+	ffffffffb46e9392 [unknown] ([unknown])
+	ffffffffb46e95da [unknown] ([unknown])
+	ffffffffb4482b34 [unknown] ([unknown])
+	ffffffffb4482dc7 [unknown] ([unknown])
+	ffffffffb50011fe [unknown] ([unknown])
+	    7ff26696af08 _dl_start+0x348 (/usr/lib64/ld-2.28.so)
+	    7ff266969ee8 _dl_start_user+0x0 (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.078896:    1665707 cycles:u: 
+	    7ff266962bfc __GI___tunables_init+0xfc (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.083188:  141846794 cycles:u: 
+	    7ff266958830 do_lookup_x+0x330 (/usr/lib64/ld-2.28.so)
+	    7ff266b53f30 [unknown] (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.091074:          1 cycles:u: 
+	    7ff264304046 pthread_setaffinity_np@@GLIBC_2.3.4+0x16 (/usr/lib64/libpthread-2.28.so)
+	6165726874005345 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.091091:          1 cycles:u: 
+	    7ff2639377d8 gomp_init_affinity+0x28 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libgomp.so.1.0.0)
+	6165726874005345 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.091093:         68 cycles:u: 
+	    7ff2639377df gomp_init_affinity+0x2f (/apps/developers/compilers/gcc/11.2/1/default/lib64/libgomp.so.1.0.0)
+	6165726874005345 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.091095:      33533 cycles:u: 
+	    7ff263920e84 [unknown] (/apps/developers/compilers/gcc/11.2/1/default/lib64/libgomp.so.1.0.0)
+	6165726874005345 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.091107:   19869851 cycles:u: 
+	    7ff266958583 do_lookup_x+0x83 (/usr/lib64/ld-2.28.so)
+
+mnist_forest_db 752267 15053187.117285:  106245785 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.149776:   33976206 cycles:u: 
+	    7ff263ffadcd std::istream::read+0xd (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.160155:   33313659 cycles:u: 
+	    7ff263fed9c4 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x4 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.170335:   33125792 cycles:u: 
+	          40268a load_mnist_images+0xba (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.180456:   33091018 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.190569:   33086400 cycles:u: 
+	    7ff263ffadf4 std::istream::read+0x34 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.200664:   33087890 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.210759:   33114679 cycles:u: 
+	    7ff263ffae0f std::istream::read+0x4f (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.220869:   33082276 cycles:u: 
+	    7ff263ffadef std::istream::read+0x2f (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.230958:   33098423 cycles:u: 
+	    7ff2640221e5 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x45 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.241062:   33107197 cycles:u: 
+	          402686 load_mnist_images+0xb6 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.251175:   33085430 cycles:u: 
+	    7ff263ff9e08 std::istream::sentry::sentry+0x8 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.261271:   33079286 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.271368:   33109044 cycles:u: 
+	    7ff263feda8f std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0xcf (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.281475:   33096944 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.291578:   33101031 cycles:u: 
+	    7ff263ff9e1a std::istream::sentry::sentry+0x1a (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	  7ffd81eb134000 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.301691:   33095099 cycles:u: 
+	    7ff263feda7e std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0xbe (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.311791:   33093647 cycles:u: 
+	    7ff263ffae12 std::istream::read+0x52 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.321886:   33123176 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.331992:   33118050 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.342091:   33107308 cycles:u: 
+	    7ff263ff9e35 std::istream::sentry::sentry+0x35 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	  7ffd81eb134000 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.352202:   33094596 cycles:u: 
+	    7ff263ff9e35 std::istream::sentry::sentry+0x35 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	  7ffd81eb134000 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.362298:   33116467 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.372406:   33103545 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.382485:   33171648 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.392577:   33175467 cycles:u: 
+	    7ff2640221c0 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x20 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.402675:   33187727 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.412792:   33151182 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.422884:   33189148 cycles:u: 
+	    7ff264022206 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x66 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.432986:   33188507 cycles:u: 
+	    7ff263ffae17 std::istream::read+0x57 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.443106:   33144452 cycles:u: 
+	          402686 load_mnist_images+0xb6 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.453191:   33189013 cycles:u: 
+	          402686 load_mnist_images+0xb6 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.463298:   33179741 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.473401:   33158787 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.483503:   33181359 cycles:u: 
+	          40268a load_mnist_images+0xba (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.493607:   33182093 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.503724:   33134968 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.513812:   33161983 cycles:u: 
+	    7ff263ffae0f std::istream::read+0x4f (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.523911:   33163720 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.534009:   33178712 cycles:u: 
+	    7ff263ffae17 std::istream::read+0x57 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.544100:   33223749 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.554216:   33180331 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.564325:   33175761 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.574424:   33179990 cycles:u: 
+	    7ff263fed9d5 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x15 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.584523:   33198013 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.594622:   33225697 cycles:u: 
+	    7ff2640221d0 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x30 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.604734:   33189862 cycles:u: 
+	    7ff2633ce87b __memmove_avx_unaligned_erms+0x7b (/usr/lib64/libc-2.28.so)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.614840:   33179612 cycles:u: 
+	    7ff2640221e5 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x45 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.624950:   33142844 cycles:u: 
+	          401700 std::istream::read@plt+0x0 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.635048:   33153804 cycles:u: 
+	    7ff263ffae04 std::istream::read+0x44 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.645147:   33158011 cycles:u: 
+	    7ff2640221a8 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x8 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.655244:   33161998 cycles:u: 
+	    7ff2640221a0 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.665344:   33177058 cycles:u: 
+	    7ff263ff9e35 std::istream::sentry::sentry+0x35 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	  7ffd81eb134000 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.675451:   33176630 cycles:u: 
+	          40268a load_mnist_images+0xba (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.685557:   33164674 cycles:u: 
+	    7ff263feda87 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0xc7 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.695658:   33166304 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.705758:   33176061 cycles:u: 
+	    7ff263ffae0f std::istream::read+0x4f (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.715865:   33155937 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.725966:   33163259 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.736070:   33148554 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.746168:   33171582 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.756274:   33163388 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.766373:   33149814 cycles:u: 
+	    7ff263fedafb std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x13b (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.776473:   33169816 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.786589:   33139541 cycles:u: 
+	          40268a load_mnist_images+0xba (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.796691:   33137436 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.806790:   33149074 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.816888:   33137366 cycles:u: 
+	    7ff263feda7e std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0xbe (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.826982:   33171866 cycles:u: 
+	    7ff2633ce87f __memmove_avx_unaligned_erms+0x7f (/usr/lib64/libc-2.28.so)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.837090:   33144774 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.847191:   33146330 cycles:u: 
+	    7ff2640221a0 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.857291:   33133554 cycles:u: 
+	    7ff263ff9e08 std::istream::sentry::sentry+0x8 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.867394:   33138107 cycles:u: 
+	          40267a load_mnist_images+0xaa (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.877494:   33147897 cycles:u: 
+	    7ff263ffae17 std::istream::read+0x57 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.887586:   33163784 cycles:u: 
+	    7ff263ff9e08 std::istream::sentry::sentry+0x8 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.897690:   33155666 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.907795:   33157936 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.917897:   33157716 cycles:u: 
+	    7ff2633ce871 __memmove_avx_unaligned_erms+0x71 (/usr/lib64/libc-2.28.so)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.927996:   33146601 cycles:u: 
+	    7ff263ffadea std::istream::read+0x2a (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.938094:   33166781 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	3f3f3f3f3f3f3f3f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.948191:   33164345 cycles:u: 
+	    7ff263fed9d5 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x15 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.961900:   24150787 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.969292:   29519886 cycles:u: 
+	    7ff264022206 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x66 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.978287:   32058318 cycles:u: 
+	          40269c load_mnist_images+0xcc (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.988072:   32850833 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053187.998081:   33073235 cycles:u: 
+	          402697 load_mnist_images+0xc7 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.008154:   33131229 cycles:u: 
+	          40268a load_mnist_images+0xba (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.018247:   33152740 cycles:u: 
+	    7ff263fed9d5 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x15 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.028346:   33165328 cycles:u: 
+	    7ff263ffae0c std::istream::read+0x4c (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.038455:   33154703 cycles:u: 
+	    7ff263ffadf6 std::istream::read+0x36 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.048540:   33194952 cycles:u: 
+	    7ff263ffadcd std::istream::read+0xd (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.058641:   33195396 cycles:u: 
+	    7ff263ff9e08 std::istream::sentry::sentry+0x8 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.068752:   33166966 cycles:u: 
+	    7ff263fed9c0 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.078836:   33206896 cycles:u: 
+	    7ff263fed9d5 std::basic_filebuf<char, std::char_traits<char> >::xsgetn+0x15 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.088943:   33187355 cycles:u: 
+	          402686 load_mnist_images+0xb6 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	               0 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.099037:   33207036 cycles:u: 
+	    7ff2640221d0 std::basic_streambuf<char, std::char_traits<char> >::xsgetn+0x30 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	         1fa9280 [unknown] ([unknown])
+	    7ff263ff3760 std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf+0x0 (/apps/developers/compilers/gcc/11.2/1/default/lib64/libstdc++.so.6.0.29)
+	48fb894853002f8f [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.125218:   20307946 cycles:u: 
+	          401e84 main+0x2d4 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.131364:   27520852 cycles:u: 
+	          401e8c main+0x2dc (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.139684:   31667467 cycles:u: 
+	          401e8c main+0x2dc (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.149235:   32942338 cycles:u: 
+	          401e84 main+0x2d4 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.159182:   33336082 cycles:u: 
+	          401e84 main+0x2d4 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.169248:   33443293 cycles:u: 
+	          401e84 main+0x2d4 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.179354:   33460006 cycles:u: 
+	          401e84 main+0x2d4 (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.192157:   30422851 cycles:u: 
+	          401f1c main+0x36c (/home/wsgp73/miscada-dissertation/code/benchmarks_baseline/mnist_forest_dbg)
+	    7ff2633617e5 __libc_start_main+0xe5 (/usr/lib64/libc-2.28.so)
+	5541f689495641d7 [unknown] ([unknown])
+
+mnist_forest_db 752267 15053188.202429:   30577479 cycles:u: 
+	    7ff266959024 _dl_lookup_symbol_x+0x24 (/usr/lib64/ld-2.28.so)
+	             270 [unknown] ([unknown])
+	               0 [unknown] ([unknown])
+

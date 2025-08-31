@@ -1,0 +1,19 @@
+mnist_forest_db;[ld-2.28.so];do_lookup_x 141846794
+mnist_forest_db;[unknown];[libgomp.so.1.0.0] 33533
+mnist_forest_db;[unknown];[unknown];_dl_lookup_symbol_x 30577479
+mnist_forest_db;[unknown];__libc_start_main;main 243100835
+mnist_forest_db;[unknown];gomp_init_affinity 69
+mnist_forest_db;[unknown];load_mnist_images 1050264468
+mnist_forest_db;[unknown];pthread_setaffinity_np@@GLIBC_2.3.4 1
+mnist_forest_db;[unknown];std::basic_filebuf<char, std::char_traits<char> >::xsgetn 437810590
+mnist_forest_db;[unknown];std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf;[unknown];__memmove_avx_unaligned_erms 99519444
+mnist_forest_db;[unknown];std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf;[unknown];std::basic_filebuf<char, std::char_traits<char> >::xsgetn 265250924
+mnist_forest_db;[unknown];std::basic_filebuf<char, std::char_traits<char> >::~basic_filebuf;[unknown];std::basic_streambuf<char, std::char_traits<char> >::xsgetn 328061608
+mnist_forest_db;[unknown];std::istream::read 763410603
+mnist_forest_db;[unknown];std::istream::read@plt 33142844
+mnist_forest_db;[unknown];std::istream::sentry::sentry 265058157
+mnist_forest_db;__GI___tunables_init 1665707
+mnist_forest_db;_dl_start_user;_dl_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 11523
+mnist_forest_db;_dl_start_user;_dl_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 52
+mnist_forest_db;_start;[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown];[unknown] 1
+mnist_forest_db;do_lookup_x 19869851

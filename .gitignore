@@ -47,3 +47,4 @@ code/benchmarks_baseline/perf.data.old
 code/benchmarks_baseline/perf_higgs.data
 code/benchmarks_improved/perf.data.old
 code/benchmarks_improved/perf_higgs.data
+code/benchmarks_baseline/decision_tree/perf_higgs.data

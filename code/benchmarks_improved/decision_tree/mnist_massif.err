@@ -1,0 +1,21 @@
+==652708== Massif, a heap profiler
+==652708== Copyright (C) 2003-2017, and GNU GPL'd, by Nicholas Nethercote
+==652708== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==652708== Command: ./mnist_forest_dbg
+==652708== 
+==652708== 
+==652708== Process terminating with default action of signal 11 (SIGSEGV)
+==652708==  Access not within mapped region at address 0x480B235620
+==652708==    at 0x518731B: da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::count_class_occurences(std::vector<long, std::allocator<long> >&, long, long) (in /home/wsgp73/miscada-dissertation/code/aocl-data-analytics/build/install/lib/ILP64/libaocl-da.so)
+==652708==    by 0x519853F: da_dynamic_dispatch_generic::da_decision_forest::decision_tree<float>::fit() (in /home/wsgp73/miscada-dissertation/code/aocl-data-analytics/build/install/lib/ILP64/libaocl-da.so)
+==652708==    by 0x51AD239: da_dynamic_dispatch_generic::da_decision_forest::random_forest<float>::fit() [clone ._omp_fn.0] (in /home/wsgp73/miscada-dissertation/code/aocl-data-analytics/build/install/lib/ILP64/libaocl-da.so)
+==652708==    by 0x7C4F1E5: gomp_thread_start (team.c:125)
+==652708==    by 0x72821C9: start_thread (in /usr/lib64/libpthread-2.28.so)
+==652708==    by 0x80C78D2: clone (in /usr/lib64/libc-2.28.so)
+==652708==  If you believe this happened as a result of a stack
+==652708==  overflow in your program's main thread (unlikely but
+==652708==  possible), you can try to increase the size of the
+==652708==  main thread stack using the --main-stacksize= flag.
+==652708==  The main thread stack size used in this run was 8388608.
+==652708== 
+/var/spool/slurmd/job13764310/slurm_script: line 39: 652708 Segmentation fault      valgrind --tool=massif --massif-out-file=massif.out --time-unit=B ./mnist_forest_dbg
