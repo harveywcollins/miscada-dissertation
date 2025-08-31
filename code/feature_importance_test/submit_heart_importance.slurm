@@ -18,7 +18,6 @@ export AOCL_ROOT=/home/wsgp73/aocl/5.0.0/gcc
 export AOCLDA_ROOT=/home/wsgp73/miscada-dissertation/code/aocl-data-analytics/build/install
 export LIKWID_ROOT=/apps/developers/libraries/likwid/5.2.0/1/default
 
-# Set the library path for LP64 (32-bit integers)
 export LD_LIBRARY_PATH=${AOCLDA_ROOT}/lib/LP64:${AOCL_ROOT}/lib_LP64:${LIKWID_ROOT}/lib:${LD_LIBRARY_PATH}
 
 echo "--- COMPILING C++ HEART FAILURE TEST ---"

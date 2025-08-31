@@ -128,8 +128,8 @@ int main() {
     da_options_set_int   (f, "number of trees",  100);
     da_options_set_int   (f, "maximum depth",     15);
     da_options_set_string(f, "scoring function", "entropy");
-    da_options_set_string(f, "task",             "classification");
-    da_options_set_int   (f, "seed",              42);
+    da_options_set_string(f, "task", "classification");
+    da_options_set_int   (f, "seed", 42);
 
     // Train
     auto t0 = std::chrono::high_resolution_clock::now();

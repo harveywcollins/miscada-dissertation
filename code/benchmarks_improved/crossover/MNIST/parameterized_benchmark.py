@@ -9,9 +9,7 @@ from mnist_utils import load_mnist_images, load_mnist_labels
 from aoclda.decision_forest import decision_forest
 
 def run_benchmark(n_trees, max_depth, n_features):
-    """
-    Trains a random forest to compare coarse-grained vs. hybrid parallelism.
-    """
+
     threads = os.getenv('OMP_NUM_THREADS', 'N/A')
     print(f"--- Benchmark: trees={n_trees}, depth={max_depth}, features={n_features}, threads={threads} ---")
     

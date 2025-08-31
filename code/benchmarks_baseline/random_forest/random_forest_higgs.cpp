@@ -95,12 +95,12 @@ int main() {
 
 
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train,
-            /* y         = */ y_tr_data
+            /* X = */ Xtr_cm.data(),
+            /* stride = */ n_train,
+            /* y = */ y_tr_data
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n";

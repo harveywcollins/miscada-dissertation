@@ -4,7 +4,6 @@
 OUTPUT_DIR="MNIST_strongscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
-# The C++ source file to be compiled and run
 CPP_SOURCE_FILE="random_forest_mnist.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
@@ -39,7 +38,6 @@ export AOCLDA_ROOT=/home/wsgp73/miscada-dissertation/code/aocl-data-analytics/bu
 export LIKWID_ROOT=/apps/developers/libraries/likwid/5.2.0/1/default
 OPENSSL_LIB_DIR=\${OPENSSL3_ROOT}/lib64
 
-# Define a unique name for the executable based on thread count
 EXECUTABLE_NAME="mnist_forest_test_\${OMP_NUM_THREADS}"
 
 echo "--- COMPILING C++ MNIST TEST for \${OMP_NUM_THREADS} threads ---"

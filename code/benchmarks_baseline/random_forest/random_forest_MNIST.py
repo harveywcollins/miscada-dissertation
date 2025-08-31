@@ -25,7 +25,6 @@ y_test      = load_mnist_labels(test_labels_path)
 X_train = X_train_img.reshape(X_train_img.shape[0], -1).astype(np.float32) / 255.0
 X_test  = X_test_img.reshape(X_test_img.shape[0],  -1).astype(np.float32) / 255.0
 
-# Convert labels to match AOCL-DA dtype
 y_train = y_train.astype(np.int32)
 y_test  = y_test.astype(np.int32)
 

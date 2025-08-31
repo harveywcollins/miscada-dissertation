@@ -20,7 +20,6 @@ export AOCLDA_ROOT=/home/wsgp73/miscada-dissertation/code/aocl-data-analytics/bu
 export LIKWID_ROOT=/apps/developers/libraries/likwid/5.2.0/1/default
 OPENSSL_LIB_DIR=${OPENSSL3_ROOT}/lib64
 
-# Add OpenSSL to the library path to prevent linker errors
 export LD_LIBRARY_PATH=${OPENSSL_LIB_DIR}:${LD_LIBRARY_PATH}
 
 CPP_SOURCE_FILE="decision_forest_higgs_importance.cpp"

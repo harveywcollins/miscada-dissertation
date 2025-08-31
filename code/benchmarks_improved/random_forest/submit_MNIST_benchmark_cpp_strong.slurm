@@ -62,7 +62,6 @@ if [ \$? -ne 0 ]; then
 fi
 
 echo "--- RUNNING C++ EXECUTABLE ---"
-# Use numactl to ensure memory is interleaved across NUMA nodes
 numactl --interleave=all ./\${EXECUTABLE_NAME}
 echo "--- JOB COMPLETE ---"
 

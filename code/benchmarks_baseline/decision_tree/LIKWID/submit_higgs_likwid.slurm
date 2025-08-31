@@ -9,7 +9,6 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G
 
-# --- Environment Setup ---
 echo "--- SETTING UP ENVIRONMENT ---"
 module purge
 module load gcc/11.2
@@ -58,5 +57,4 @@ likwid-perfctr -C ${SLURM_CPUS_ON_NODE} -g CACHE -m ./${EXECUTABLE_NAME}
 
 echo "--- JOB COMPLETE ---"
 
-# --- Cleanup ---
 rm ./${EXECUTABLE_NAME}

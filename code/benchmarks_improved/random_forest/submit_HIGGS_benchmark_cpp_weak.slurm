@@ -4,14 +4,10 @@
 OUTPUT_DIR="HIGGS_weakscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
-# The C++ source file for the weak scaling benchmark
 CPP_SOURCE_FILE="random_forest_higgs_weak.cpp"
 
-# --- MODIFIED BLOCK START ---
-# Clean up any leftover executables from previous runs to ensure a clean state.
 echo "Cleaning up old executables..."
 rm -f higgs_forest_weak_test_*
-# --- MODIFIED BLOCK END ---
 
 # Check if the C++ source file exists
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
@@ -20,10 +16,7 @@ if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     exit 1
 fi
 
-# Define the number of threads to test with
 THREADS=(1 2 4 8 16 32 64 128)
-# Define the corresponding fraction of the dataset to use for each thread count
-# This keeps the work-per-thread constant. 1/128, 2/128, 4/128, etc.
 DATA_FRACTIONS=(0.0078125 0.015625 0.03125 0.0625 0.125 0.25 0.5 1.0)
 
 # Loop through the defined thread counts

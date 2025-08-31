@@ -15,7 +15,6 @@
 #define HIGGS_CSV_PATH "/nobackup/wsgp73/HIGGS.csv"
 #endif
 
-// Function to load the HIGGS dataset from a CSV file
 bool load_higgs_csv(const std::string &path,
                     std::vector<std::vector<float>> &features,
                     std::vector<int> &labels) {

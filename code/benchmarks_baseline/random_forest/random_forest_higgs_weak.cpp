@@ -9,7 +9,7 @@
 #include <stdexcept>
 #include <iomanip>
 #include <cmath>
-#include <cstdlib> // For atof
+#include <cstdlib>
 
 #ifndef HIGGS_CSV_PATH
 #define HIGGS_CSV_PATH "/nobackup/wsgp73/HIGGS.csv"
@@ -47,7 +47,6 @@ bool load_higgs_csv(const std::string &path,
 }
 
 int main(int argc, char *argv[]) {
-    // Check for the data fraction command-line argument
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <data_fraction>" << std::endl;
         return 1;

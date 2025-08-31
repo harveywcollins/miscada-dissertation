@@ -16,7 +16,6 @@
 #endif
 
 void check_status(da_status status, const std::string& func_name, da_handle handle = nullptr) {
-    // For the size query, a dimension error is the EXPECTED and CORRECT outcome.
     if (func_name == "get_result (size query)" && status == da_status_invalid_array_dimension) {
         fprintf(stderr, "[DIAG] Received expected status 'da_status_invalid_array_dimension'. This is correct.\n");
         return;
@@ -31,7 +30,6 @@ void check_status(da_status status, const std::string& func_name, da_handle hand
     }
 }
 
-// Data loading function specific to the HIGGS CSV format
 bool load_higgs_csv(const std::string &path,
                     std::vector<std::vector<float>> &features,
                     std::vector<int> &labels) {
@@ -80,7 +78,6 @@ int main() {
     int n_cls = *std::max_element(all_labels.begin(), all_labels.end()) + 1;
     printf("[INFO] Data loading complete. Samples: %d, Features: %d\n", n_total, n_features);
 
-    // Create generic feature names since the HIGGS dataset has no header
     std::vector<std::string> feature_names;
     for (int i = 0; i < n_features; ++i) {
         feature_names.push_back("Feature_" + std::to_string(i + 1));

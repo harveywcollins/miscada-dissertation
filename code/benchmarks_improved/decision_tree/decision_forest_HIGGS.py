@@ -13,8 +13,6 @@ data = np.loadtxt(csv_path, delimiter=",", dtype=np.float32)
 X = data[:, :-1]
 y = data[:, -1].astype(np.int32)
 
-# Reduce working set for faster training
-
 N_EXAMPLES = 200_000
 rng = np.random.default_rng(42)
 indices = rng.choice(X.shape[0], size=N_EXAMPLES, replace=False)

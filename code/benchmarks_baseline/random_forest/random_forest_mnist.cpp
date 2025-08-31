@@ -1,4 +1,4 @@
-// random_forest_mnist.cpp (Corrected Filenames)
+// random_forest_mnist.cpp
 
 #include "aoclda.h"
 #include <iostream>
@@ -12,7 +12,6 @@
 #include <iomanip>
 
 #ifndef MNIST_DIR
-// IMPORTANT: Make sure this path points to the directory containing the MNIST files.
 #define MNIST_DIR "/nobackup/wsgp73"
 #endif
 
@@ -26,7 +25,6 @@ static uint32_t readUint32(std::ifstream &ifs) {
            (uint32_t(b[3]));
 }
 
-// Loads the MNIST image data, normalizes pixel values to [0.0, 1.0].
 static std::vector<float> load_mnist_images(const std::string &path,
                                             int &n_images, int &rows, int &cols) {
     std::ifstream ifs(path, std::ios::binary);
@@ -80,9 +78,6 @@ int main() {
     std::vector<int> y_tr, y_te;
 
     try {
-        // Load MNIST training and testing data
-        // --- MODIFIED LINES START HERE ---
-        // Changed hyphens to periods to match your filenames
         X_tr = load_mnist_images(
             std::string(MNIST_DIR) + "/train-images.idx3-ubyte",
             n_train, rows, cols
@@ -99,7 +94,6 @@ int main() {
             std::string(MNIST_DIR) + "/t10k-labels.idx1-ubyte",
             dummy
         );
-        // --- MODIFIED LINES END HERE ---
 
     } catch (const std::runtime_error& e) {
         std::cerr << "ERROR: Failed to load MNIST data. " << e.what() << std::endl;

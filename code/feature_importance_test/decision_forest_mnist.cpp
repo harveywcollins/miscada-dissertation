@@ -134,7 +134,6 @@ int main() {
         check_status(da_handle_get_result_s(handle, query, &importances_dim, importances.data()), "get_result (data query)", handle);
         std::cout << "Successfully extracted " << importances_dim << " importance scores." << std::endl;
         
-        // Print the first 10 for diagnostics
         std::cout << "First 10 importances:" << std::endl;
         for(int i = 0; i < 10 && i < importances_dim; ++i) {
             std::cout << "  Feature " << i << ": " << std::fixed << std::setprecision(6) << importances[i] << std::endl;

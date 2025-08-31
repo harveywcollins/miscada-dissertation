@@ -16,7 +16,6 @@
 #define MNIST_DIR "/nobackup/wsgp73"
 #endif
 
-// Helper function to read a 32-bit big-endian integer from the file stream.
 static uint32_t readUint32(std::ifstream &ifs) {
     unsigned char b[4];
     ifs.read(reinterpret_cast<char*>(b), 4);
@@ -64,7 +63,7 @@ static std::vector<int> load_mnist_labels(const std::string &path, int &n_labels
 int main() {
     std::cout << "AOCL-DA Decision Forest on MNIST - WEAK SCALING TEST\n\n";
 
-    // --- WEAK SCALING LOGIC START ---
+    // --- WEAK SCALING START ---
     int n_threads = 1;
     const char* n_threads_env = std::getenv("OMP_NUM_THREADS");
     if (n_threads_env) {
@@ -82,7 +81,7 @@ int main() {
 
     std::cout << "Running with " << n_threads << " threads." << std::endl;
     std::cout << "Weak Scaling: Using " << n_train_weak << " of " << MAX_TRAIN_SAMPLES << " training samples.\n" << std::endl;
-    // --- WEAK SCALING LOGIC END ---
+    // --- WEAK SCALING END ---
 
 
     int n_train_full, n_test, rows, cols, dummy;
@@ -103,7 +102,6 @@ int main() {
     int n_feat = rows * cols;
     int n_cls  = *std::max_element(y_tr_full.begin(), y_tr_full.end()) + 1;
 
-    // Transpose data into column-major format for AOCL-DA, using only the subset of data for weak scaling
     std::vector<float> Xtr_cm(n_train_weak * n_feat);
     for (int i = 0; i < n_train_weak; ++i) {
         for (int j = 0; j < n_feat; ++j) {

@@ -14,7 +14,6 @@ if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     exit 1
 fi
 
-# Loop through different numbers of threads for weak scaling test
 for NT in 1 2 4 8 16 32 64 128; do
   sbatch <<EOF
 #!/bin/bash
@@ -33,8 +32,6 @@ module load gcc/11.2
 module load aocl
 module load likwid
 
-# Set environment variables for OpenMP and library paths
-# The C++ program will read OMP_NUM_THREADS to determine the problem size
 export OMP_NUM_THREADS=\${SLURM_CPUS_PER_TASK}
 export OPENSSL3_ROOT=/home/wsgp73/openssl3
 export AOCL_ROOT=/home/wsgp73/aocl/5.0.0/gcc

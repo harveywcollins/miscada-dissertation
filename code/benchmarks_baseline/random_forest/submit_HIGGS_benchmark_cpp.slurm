@@ -16,10 +16,8 @@ for NT in 1 2 4 8 16 32 64 128; do
   sbatch <<EOF
 #!/bin/bash
 #SBATCH --job-name=higgs_cpp_${NT}
-# --- MODIFIED LINES START HERE ---
 #SBATCH --output=${OUTPUT_DIR}/higgs_strong_cpp_${NT}.out
 #SBATCH --error=${OUTPUT_DIR}/higgs_strong_cpp_${NT}.err
-# --- MODIFIED LINES END HERE ---
 #SBATCH --partition=test
 #SBATCH --time=00:15:00
 #SBATCH --ntasks=1

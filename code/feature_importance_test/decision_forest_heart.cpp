@@ -17,16 +17,11 @@
 #define DATA_DIR "/nobackup/wsgp73"
 #endif
 
-// Helper to check AOCL-DA status and print detailed errors
 void check_status(da_status status, const std::string& func_name, da_handle handle = nullptr) {
-    // vvvvvvvvvvvv THIS IS THE FIX vvvvvvvvvvvvvv
-    // For the size query, a dimension error is the EXPECTED and CORRECT outcome.
-    // We check for it and return normally, allowing the program to continue.
     if (func_name == "get_result (size query)" && status == da_status_invalid_array_dimension) {
         fprintf(stderr, "[DIAG] Received expected status 'da_status_invalid_array_dimension'. This is correct.\n");
         return;
     }
-    // ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
     if (status != da_status_success) {
         fprintf(stderr, "FATAL ERROR in %s with status code %d\n", func_name.c_str(), status);
@@ -52,7 +47,6 @@ void load_heart_data(const std::string& path, std::vector<std::string>& feature_
         while (std::getline(header_stream, cell, ',')) {
             feature_names.push_back(cell);
         }
-        // The last column is the target, not a feature
         feature_names.pop_back();
         n_features = feature_names.size();
     }
@@ -96,7 +90,6 @@ int main() {
     int n_test = n_samples - n_train;
     int n_cls = *std::max_element(y.begin(), y.end()) + 1;
 
-    // Transpose data to column-major format for the library
     printf("[INFO] Transposing data to column-major format...\n");
     std::vector<float> X_tr_colmajor((size_t)n_train * n_features);
     for (int i = 0; i < n_train; ++i) {
@@ -156,7 +149,7 @@ int main() {
             printf("  %d. %-25s: %f\n", i + 1, feature_names[feat_idx].c_str(), importances[feat_idx]);
         }
     } else {
-        fprintf(stderr, "ERROR: Failed to retrieve feature importances.\n");
+        fprintf(stderr, "ERROR: Failed to retrieve feature importances!!!!!\n");
     }
 
     printf("\n--- Model Performance ---\n");
