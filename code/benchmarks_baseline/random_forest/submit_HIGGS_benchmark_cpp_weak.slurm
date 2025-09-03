@@ -3,7 +3,6 @@
 OUTPUT_DIR="HIGGS_weakscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
-# The C++ source file for the weak scaling benchmark
 CPP_SOURCE_FILE="random_forest_higgs_weak.cpp"
 
 echo "Cleaning up old executables..."
@@ -35,7 +34,6 @@ for i in ${!THREADS[@]}; do
 #SBATCH --cpus-per-task=${NT}
 #SBATCH --mem=32G
 
-# Purge and load necessary modules
 module purge
 module load gcc/11.2
 module load aocl

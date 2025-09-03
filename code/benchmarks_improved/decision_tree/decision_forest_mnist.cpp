@@ -41,7 +41,7 @@ static std::vector<float> load_mnist_images(const std::string &path,
 
 static std::vector<int> load_mnist_labels(const std::string &path, int &n_labels) {
     std::ifstream ifs(path, std::ios::binary);
-    if (!ifs) throw std::runtime_error("Could not open " + path);
+    if (!ifs) throw std::runtime_error("Could not open, baffed " + path);
     readUint32(ifs);
     n_labels = readUint32(ifs);
     std::vector<int> labels(n_labels);
@@ -125,8 +125,8 @@ int main() {
     }
 
     // Hyperparameters
-    da_options_set_int   (f, "number of trees",  100);
-    da_options_set_int   (f, "maximum depth",     15);
+    da_options_set_int   (f, "number of trees", 100);
+    da_options_set_int   (f, "maximum depth", 15);
     da_options_set_string(f, "scoring function", "entropy");
     da_options_set_string(f, "task", "classification");
     da_options_set_int   (f, "seed", 42);
@@ -146,11 +146,11 @@ int main() {
     // Predict
     std::vector<int> y_pred(n_test);
     if (da_forest_predict_s(f,
-            /* n_rows  = */ n_test,
-            /* n_cols  = */ n_feat,
-            /* X       = */ Xte_cm.data(),
-            /* stride  = */ n_test,
-            /* y_pred  = */ y_pred.data()
+            /* n_rows = */ n_test,
+            /* n_cols = */ n_feat,
+            /* X = */ Xte_cm.data(),
+            /* stride = */ n_test,
+            /* y_pred = */ y_pred.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_predict_s\n";

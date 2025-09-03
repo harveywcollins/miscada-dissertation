@@ -9,10 +9,9 @@ CPP_SOURCE_FILE="random_forest_higgs_weak.cpp"
 echo "Cleaning up old executables..."
 rm -f higgs_forest_weak_test_*
 
-# Check if the C++ source file exists
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "Please ensure the C++ runner file is in the same directory as this script."
+    echo "Ensure the C++ runner file is in the same directory as this script."
     exit 1
 fi
 
@@ -36,13 +35,11 @@ for i in ${!THREADS[@]}; do
 #SBATCH --cpus-per-task=${NT}
 #SBATCH --mem=32G
 
-# Purge and load necessary modules
 module purge
 module load gcc/11.2
 module load aocl
 module load likwid
 
-# Set environment variables required for compilation and execution
 export OMP_NUM_THREADS=\${SLURM_CPUS_PER_TASK}
 export OPENSSL3_ROOT=/home/wsgp73/openssl3
 export AOCL_ROOT=/home/wsgp73/aocl/5.0.0/gcc

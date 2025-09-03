@@ -61,9 +61,9 @@ train_acc    = (y_train_pred == y_train).mean()
 test_acc     = (y_test_pred  == y_test).mean()
 
 # Report
-print(f"#threads:           {NT}")
-print(f"#train samples:    {n_samples}")
+print(f"#threads: {NT}")
+print(f"#train samples: {n_samples}")
 print(f"training time [s]: {training_time:.6f}")
-print(f"train accuracy:    {train_acc:.4f}")
-print(f" test accuracy:    {test_acc:.4f}")
+print(f"train accuracy: {train_acc:.4f}")
+print(f" test accuracy: {test_acc:.4f}")
 

@@ -123,7 +123,7 @@ int main() {
             /* n_classes = */ n_cls,
             /* X         = */ Xtr_cm.data(),
             /* stride    = */ n_train_weak,
-            /* y         = */ y_tr_full.data() // Pointer is fine, library will only read n_train_weak elements
+            /* y         = */ y_tr_full.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n"; da_handle_destroy(&f); return 1;
@@ -148,10 +148,9 @@ int main() {
               << std::chrono::duration<double>(t1 - t0).count()
               << " s\n";
 
-    // Prediction on the test set is unchanged
     std::cout << "\nStarting prediction on full test set..." << std::endl;
     std::vector<int> y_pred(n_test);
-    std::vector<float> Xte_cm(n_test * n_feat); // Transpose test data
+    std::vector<float> Xte_cm(n_test * n_feat);
     for (int i = 0; i < n_test; ++i) {
         for (int j = 0; j < n_feat; ++j) {
             Xte_cm[j * n_test + i] = X_te[i * n_feat + j];
@@ -161,7 +160,7 @@ int main() {
     if (da_forest_predict_s(f,
             /* n_rows = */ n_test,
             /* n_cols = */ n_feat,
-            /* X      = */ Xte_cm.data(),
+            /* X = */ Xte_cm.data(),
             /* stride = */ n_test,
             /* y_pred = */ y_pred.data()
         ) != da_status_success)

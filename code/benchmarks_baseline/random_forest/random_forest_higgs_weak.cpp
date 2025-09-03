@@ -25,7 +25,7 @@ bool load_higgs_csv(const std::string &path,
         return false;
     }
 
-    std::cout << "Loading data from " << path << ". This may take a moment..." << std::endl;
+    std::cout << "Loading data from " << path << ". Moments later..." << std::endl;
 
     std::string line;
     while (std::getline(ifs, line)) {
@@ -77,7 +77,6 @@ int main(int argc, char *argv[]) {
     int n_total = static_cast<int>(n_total_full * data_fraction);
     int n_feat = all_features_rm[0].size();
     
-    // Ensure we use at least one sample
     if (n_total == 0) n_total = 1;
 
     // Resize the data to the calculated fraction
@@ -95,7 +94,6 @@ int main(int argc, char *argv[]) {
     std::cout << "Training set size: " << n_train << "\n";
     std::cout << "Test set size: " << n_test << "\n";
 
-    // Transpose the training data to column-major format for the library
     std::cout << "Transposing data to column-major format...\n";
     std::vector<float> Xtr_cm(n_train * n_feat);
     for (int i = 0; i < n_train; ++i) {
@@ -125,12 +123,12 @@ int main(int argc, char *argv[]) {
 
     // Set the training data for the decision forest
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train,
-            /* y         = */ y_tr_data
+            /* X  = */ Xtr_cm.data(),
+            /* stride = */ n_train,
+            /* y = */ y_tr_data
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n";
@@ -164,11 +162,11 @@ int main(int argc, char *argv[]) {
     std::cout << "Predicting on test set...\n";
     std::vector<int> y_pred(n_test);
     if (da_forest_predict_s(f,
-            /* n_rows   = */ n_test,
-            /* n_cols   = */ n_feat,
-            /* X        = */ Xte_cm.data(),
-            /* stride   = */ n_test,
-            /* y_pred   = */ y_pred.data()
+            /* n_rows = */ n_test,
+            /* n_cols = */ n_feat,
+            /* X = */ Xte_cm.data(),
+            /* stride = */ n_test,
+            /* y_pred = */ y_pred.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_predict_s\n";

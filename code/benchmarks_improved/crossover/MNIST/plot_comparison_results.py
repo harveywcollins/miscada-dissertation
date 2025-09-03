@@ -75,7 +75,7 @@ def generate_performance_heatmap():
     plt.yticks(rotation=0)
 
     plt.savefig("performance_heatmap.png", dpi=300, bbox_inches='tight')
-    print("\nProfessional performance heatmap saved to performance_heatmap.png")
+    print("\nPerformance heatmap saved to performance_heatmap.png")
 
 if __name__ == "__main__":
     generate_performance_heatmap()

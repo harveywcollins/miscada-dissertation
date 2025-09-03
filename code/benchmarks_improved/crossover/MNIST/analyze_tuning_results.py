@@ -48,7 +48,6 @@ def analyze_results():
     print("\n--- Performance Analysis: Coarse-Grained vs. Hybrid Parallelism ---")
     print(pivot_df.round(2))
 
-    # --- Find Optimal Thresholds ---
     print("\n--- Recommended Thresholds ---")
     
     wide_threshold_df = pivot_df.loc[16]

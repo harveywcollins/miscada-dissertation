@@ -25,7 +25,7 @@ static uint32_t readUint32(std::ifstream &ifs) {
 static std::vector<float> load_mnist_images(const std::string &path,
                                             int &n_images, int &rows, int &cols) {
     std::ifstream ifs(path, std::ios::binary);
-    if (!ifs) throw std::runtime_error("Could not open " + path);
+    if (!ifs) throw std::runtime_error("Could not open, whyyyy" + path);
     readUint32(ifs);
     n_images = readUint32(ifs);
     rows = readUint32(ifs);
@@ -41,7 +41,7 @@ static std::vector<float> load_mnist_images(const std::string &path,
 
 static std::vector<int> load_mnist_labels(const std::string &path, int &n_labels) {
     std::ifstream ifs(path, std::ios::binary);
-    if (!ifs) throw std::runtime_error("Could not open " + path);
+    if (!ifs) throw std::runtime_error("Could not open, whyyyy " + path);
     readUint32(ifs);
     n_labels = readUint32(ifs);
     std::vector<int> labels(n_labels);
@@ -111,12 +111,12 @@ int main() {
 
     // Set training data
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train,
-            /* y         = */ y_tr.data()
+            /* X  = */ Xtr_cm.data(),
+            /* stride = */ n_train,
+            /* y = */ y_tr.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n";
@@ -148,7 +148,7 @@ int main() {
     if (da_forest_predict_s(f,
             /* n_rows  = */ n_test,
             /* n_cols  = */ n_feat,
-            /* X       = */ Xte_cm.data(),
+            /* X = */ Xte_cm.data(),
             /* stride  = */ n_test,
             /* y_pred  = */ y_pred.data()
         ) != da_status_success)

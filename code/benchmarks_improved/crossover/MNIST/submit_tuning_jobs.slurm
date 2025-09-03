@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Create a new directory for this more advanced comparison
 mkdir -p comparison_results
 
 DEPTH_SWEEP="8 12 16 20 24 28"
@@ -16,7 +15,6 @@ echo "This will submit $(echo "$DEPTH_SWEEP" | wc -w) * $(echo "$FEATURES_SWEEP"
 for depth in $DEPTH_SWEEP; do
   for features in $FEATURES_SWEEP; do
   
-    # --- JOB 1: The Coarse-Grained Baseline ---
     sbatch <<EOF
 #!/bin/bash
 #SBATCH --job-name=comp_d${depth}_f${features}_t${COARSE_THREADS}
@@ -27,7 +25,7 @@ for depth in $DEPTH_SWEEP; do
 #SBATCH --nodes=1
 #SBATCH --cpus-per-task=${COARSE_THREADS}
 #SBATCH --mem=32G
-# --- Environment Setup ---
+
 module purge
 module load gcc/11.2
 module load aocl
@@ -53,11 +51,10 @@ export PYTHONPATH=\$AOCLDA_ROOT/python_package:\$PYTHONPATH
 export OMP_NUM_THREADS=${COARSE_THREADS}
 export OMP_PROC_BIND=close; export OMP_PLACES=cores
 source /home/wsgp73/miscada-dissertation/code/myenv312/bin/activate
-# --- Run Benchmark ---
+
 python3 parameterized_benchmark.py --trees ${NUM_TREES} --depth ${depth} --features ${features}
 EOF
 
-    # --- JOB 2: The Hybrid (Intra-Tree) Test ---
     sbatch <<EOF
 #!/bin/bash
 #SBATCH --job-name=comp_d${depth}_f${features}_t${HYBRID_THREADS}
@@ -94,7 +91,7 @@ export PYTHONPATH=\$AOCLDA_ROOT/python_package:\$PYTHONPATH
 export OMP_NUM_THREADS=${HYBRID_THREADS}
 export OMP_PROC_BIND=close; export OMP_PLACES=cores
 source /home/wsgp73/miscada-dissertation/code/myenv312/bin/activate
-# --- Run Benchmark ---
+
 python3 parameterized_benchmark.py --trees ${NUM_TREES} --depth ${depth} --features ${features}
 EOF
 

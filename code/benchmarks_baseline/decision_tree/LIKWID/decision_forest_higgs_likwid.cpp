@@ -20,10 +20,10 @@ bool load_higgs_csv(const std::string &path,
                     std::vector<int> &labels) {
     std::ifstream ifs(path);
     if (!ifs) {
-        std::cerr << "Could not open " << path << std::endl;
+        std::cerr << "Could not open??!" << path << std::endl;
         return false;
     }
-    std::cout << "Loading data from " << path << ". This may take a moment..." << std::endl;
+    std::cout << "Loading data from " << path << ". Moments later....." << std::endl;
     std::string line;
     while (std::getline(ifs, line)) {
         std::stringstream ss(line);
@@ -43,7 +43,7 @@ int main() {
     LIKWID_MARKER_INIT;
 
     std::cout << "AOCL-DA Decision Forest on HIGGS Dataset with LIKWID\n";
-    std::vector<std::vector<float>> all_features_rm; // Row-major
+    std::vector<std::vector<float>> all_features_rm;
     std::vector<int> all_labels;
     if (!load_higgs_csv(HIGGS_CSV_PATH, all_features_rm, all_labels)) {
         return 1;

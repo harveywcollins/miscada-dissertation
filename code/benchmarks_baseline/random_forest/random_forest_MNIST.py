@@ -49,9 +49,9 @@ print(f"Training completed in {training_time:.6f} seconds.")
 
 # Evaluate accuracy on train and test sets
 y_train_pred = clf.predict(X_train)
-train_acc    = (y_train_pred == y_train).mean()
+train_acc = (y_train_pred == y_train).mean()
 y_test_pred  = clf.predict(X_test)
-test_acc     = (y_test_pred == y_test).mean()
+test_acc = (y_test_pred == y_test).mean()
 
 print(f"Training accuracy: {train_acc:.4f}")
 print(f"Test accuracy:     {test_acc:.4f}")

@@ -49,7 +49,6 @@ bool load_higgs_csv(const std::string &path,
         std::getline(ss, cell, ',');
         labels.push_back(std::stoi(cell));
 
-        // Remaining columns are features
         std::vector<float> feature_row;
         while(std::getline(ss, cell, ',')) {
             feature_row.push_back(std::stof(cell));

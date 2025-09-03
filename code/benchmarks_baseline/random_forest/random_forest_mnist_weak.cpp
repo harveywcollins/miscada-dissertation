@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <iomanip>
-#include <cstdlib> // For getenv
+#include <cstdlib>
 
 #ifndef MNIST_DIR
 #define MNIST_DIR "/nobackup/wsgp73"
@@ -119,12 +119,12 @@ int main() {
 
     // Set training data using the n_train_weak size
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train_weak,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train_weak,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train_weak,
-            /* y         = */ y_tr_full.data() // Pointer is fine, library will only read n_train_weak elements
+            /* X = */ Xtr_cm.data(),
+            /* stride = */ n_train_weak,
+            /* y = */ y_tr_full.data() // Pointer is fine, library will only read n_train_weak elements
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n"; da_handle_destroy(&f); return 1;
@@ -162,7 +162,7 @@ int main() {
     if (da_forest_predict_s(f,
             /* n_rows = */ n_test,
             /* n_cols = */ n_feat,
-            /* X      = */ Xte_cm.data(),
+            /* X = */ Xte_cm.data(),
             /* stride = */ n_test,
             /* y_pred = */ y_pred.data()
         ) != da_status_success)

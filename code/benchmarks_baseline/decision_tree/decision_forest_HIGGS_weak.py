@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from aoclda.decision_forest import decision_forest
 
-# # Load the HIGGS CSV
+# Load the HIGGS CSV
 csv_path = "/nobackup/wsgp73/HIGGS.csv"
 data = np.loadtxt(csv_path, delimiter=",", dtype=np.float32)
 

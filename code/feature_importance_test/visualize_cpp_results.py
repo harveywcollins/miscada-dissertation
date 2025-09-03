@@ -38,7 +38,7 @@ try:
     )
 except subprocess.CalledProcessError as e:
     print("\n-- C++ EXECUTABLE FAILED ---")
-    print("The C++ program exited with an error.")
+    print("C++ program has an error!!!!")
     print(f"Return Code: {e.returncode}")
     print("\n---- C++ STDOUT -----")
     print(e.stdout)

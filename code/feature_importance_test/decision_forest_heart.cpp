@@ -32,7 +32,6 @@ void check_status(da_status status, const std::string& func_name, da_handle hand
     }
 }
 
-// Function to load the heart failure CSV data
 void load_heart_data(const std::string& path, std::vector<std::string>& feature_names, std::vector<float>& X_data, std::vector<int>& y_data, int& n_samples, int& n_features) {
     std::ifstream file(path);
     if (!file.is_open()) {
@@ -85,7 +84,7 @@ int main() {
     }
     printf("Data loading complete. Samples: %d, Features: %d\n", n_samples, n_features);
 
-    // Simple 80/20 train/test split
+    // 80/20 train/test split
     int n_train = static_cast<int>(n_samples * 0.8);
     int n_test = n_samples - n_train;
     int n_cls = *std::max_element(y.begin(), y.end()) + 1;

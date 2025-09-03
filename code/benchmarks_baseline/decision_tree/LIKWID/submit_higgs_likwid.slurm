@@ -27,7 +27,6 @@ OPENSSL_LIB_DIR=${OPENSSL3_ROOT}/lib64
 CPP_SOURCE_FILE="decision_forest_higgs_likwid.cpp"
 EXECUTABLE_NAME="higgs_forest_likwid_test"
 
-# --- Compilation ---
 echo "--- COMPILING C++ HIGGS TEST for ${OMP_NUM_THREADS} threads ---"
 g++ -std=c++17 -O3 -fopenmp -DLIKWID_PERFMON \
     -I${AOCLDA_ROOT}/include/LP64 \

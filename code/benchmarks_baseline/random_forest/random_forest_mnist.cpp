@@ -54,7 +54,6 @@ static std::vector<int> load_mnist_labels(const std::string &path, int &n_labels
     std::ifstream ifs(path, std::ios::binary);
     if (!ifs) throw std::runtime_error("Could not open " + path);
     
-    // Read header information
     uint32_t magic_number = readUint32(ifs);
     if (magic_number != 2049) throw std::runtime_error("Invalid magic number in label file " + path);
     n_labels = readUint32(ifs);
@@ -97,7 +96,7 @@ int main() {
 
     } catch (const std::runtime_error& e) {
         std::cerr << "ERROR: Failed to load MNIST data. " << e.what() << std::endl;
-        std::cerr << "Please ensure the MNIST_DIR path is correct and files are present." << std::endl;
+        std::cerr << "Files need to be present!!!" << std::endl;
         return 1;
     }
 
@@ -135,12 +134,12 @@ int main() {
 
     // Set training data
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train,
-            /* y         = */ y_tr.data()
+            /* X = */ Xtr_cm.data(),
+            /* stride = */ n_train,
+            /* y = */ y_tr.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n";
@@ -175,7 +174,7 @@ int main() {
     if (da_forest_predict_s(f,
             /* n_rows = */ n_test,
             /* n_cols = */ n_feat,
-            /* X      = */ Xte_cm.data(),
+            /* X = */ Xte_cm.data(),
             /* stride = */ n_test,
             /* y_pred = */ y_pred.data()
         ) != da_status_success)

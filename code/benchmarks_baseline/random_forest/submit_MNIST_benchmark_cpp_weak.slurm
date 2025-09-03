@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Define the output directory for logs
 OUTPUT_DIR="MNIST_weakscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
@@ -8,11 +7,10 @@ CPP_SOURCE_FILE="random_forest_mnist_weak.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "C++ runner file is in the same directory as this script."
+    echo "Ensure C++ runner file is in the same directory as this script."
     exit 1
 fi
 
-# Loop through different numbers of threads for weak scaling test
 for NT in 1 2 4 8 16 32 64 128; do
   sbatch <<EOF
 #!/bin/bash

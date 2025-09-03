@@ -95,12 +95,12 @@ int main() {
 
 
     if (da_forest_set_training_data_s(f,
-            /* n_rows    = */ n_train,
-            /* n_cols    = */ n_feat,
+            /* n_rows = */ n_train,
+            /* n_cols = */ n_feat,
             /* n_classes = */ n_cls,
-            /* X         = */ Xtr_cm.data(),
-            /* stride    = */ n_train,
-            /* y         = */ y_tr_data
+            /* X = */ Xtr_cm.data(),
+            /* stride = */ n_train,
+            /* y = */ y_tr_data
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_set_training_data_s\n";
@@ -132,11 +132,11 @@ int main() {
     std::cout << "Predicting on test set...\n";
     std::vector<int> y_pred(n_test);
     if (da_forest_predict_s(f,
-            /* n_rows   = */ n_test,
-            /* n_cols   = */ n_feat,
-            /* X        = */ Xte_cm.data(),
-            /* stride   = */ n_test,
-            /* y_pred   = */ y_pred.data()
+            /* n_rows = */ n_test,
+            /* n_cols = */ n_feat,
+            /* X = */ Xte_cm.data(),
+            /* stride = */ n_test,
+            /* y_pred = */ y_pred.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_predict_s\n";

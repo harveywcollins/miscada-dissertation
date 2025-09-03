@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# Define the output directory for logs
 OUTPUT_DIR="MNIST_strongscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
-# The C++ source file to be compiled and run
 CPP_SOURCE_FILE="random_forest_mnist.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then

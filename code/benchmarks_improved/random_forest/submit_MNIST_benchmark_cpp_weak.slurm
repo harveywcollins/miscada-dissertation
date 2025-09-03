@@ -1,13 +1,10 @@
 #!/bin/bash
 
-# Define the output directory for logs
 OUTPUT_DIR="MNIST_weakscaling_cpp"
 mkdir -p ${OUTPUT_DIR}
 
-# The C++ source file to be compiled and run for weak scaling
 CPP_SOURCE_FILE="random_forest_mnist_weak.cpp"
 
-# Check if the C++ source file exists
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
     echo "Ensure the C++ runner file is in the same directory as this script."

@@ -23,7 +23,7 @@ bool load_higgs_csv(const std::string &path,
         std::cerr << "Could not open " << path << std::endl;
         return false;
     }
-    std::cout << "Loading data from " << path << ". This may take a moment..." << std::endl;
+    std::cout << "Loading data from " << path << ". Moment later..." << std::endl;
     std::string line;
     while (std::getline(ifs, line)) {
         std::stringstream ss(line);

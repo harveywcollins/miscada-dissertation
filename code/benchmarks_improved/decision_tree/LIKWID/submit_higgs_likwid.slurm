@@ -9,7 +9,6 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G
 
-# --- Environment Setup ---
 echo "--- SETTING UP ENVIRONMENT ---"
 module purge
 module load gcc/11.2
