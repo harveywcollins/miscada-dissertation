@@ -9,7 +9,7 @@
 #include <stdexcept>
 #include <iomanip>
 #include <cmath>
-#include <cstdio> // For printf
+#include <cstdio>
 
 #ifndef MNIST_DIR
 #define MNIST_DIR "/nobackup/wsgp73"
@@ -17,7 +17,7 @@
 
 void check_status(da_status status, const std::string& func_name, da_handle handle = nullptr) {
     if (func_name == "get_result (size query)" && status == da_status_invalid_array_dimension) {
-        fprintf(stderr, "[DIAG] Received expected status code 4 (invalid dimension) for size query. This is correct.\n");
+        fprintf(stderr, "Received expected status code 4 (invalid dimension) for size query. This is correct.\n");
         return;
     }
 
@@ -67,7 +67,7 @@ static std::vector<da_int> load_mnist_labels(const std::string &path, da_int &n_
 }
 
 int main() {
-    fprintf(stderr, "[DIAG] Program Start.\n");
+    fprintf(stderr, "Program Start.\n");
 
     da_int n_train, n_test, rows, cols, dummy;
     std::vector<float> X_tr_rowmajor, X_te_rowmajor;
@@ -81,12 +81,12 @@ int main() {
     } catch (const std::exception& e) {
         fprintf(stderr, "ERROR during data loading: %s\n", e.what()); return 1;
     }
-    fprintf(stderr, "[DIAG] Data loading complete.\n");
+    fprintf(stderr, "Data loading complete.\n");
 
     da_int n_feat = rows * cols;
     da_int n_cls  = *std::max_element(y_tr.begin(), y_tr.end()) + 1;
 
-    fprintf(stderr, "[DIAG] Transposing data to column-major format...\n");
+    fprintf(stderr, "Transposing data to column-major format...\n");
     std::vector<float> X_tr_colmajor(n_train * n_feat);
     for (da_int i = 0; i < n_train; ++i) {
         for (da_int j = 0; j < n_feat; ++j) {
@@ -100,28 +100,28 @@ int main() {
         }
     }
     
-    fprintf(stderr, "[DIAG] Initializing AOCL-DA handle...\n");
+    fprintf(stderr, "Initializing AOCL-DA handle...\n");
     da_handle handle = nullptr;
     check_status(da_handle_init_s(&handle, da_handle_decision_forest), "da_handle_init_s");
 
-    fprintf(stderr, "[DIAG] Setting options...\n");
+    fprintf(stderr, "Setting options...\n");
     check_status(da_options_set_int(handle, "number of trees", 100), "options: n_trees");
     check_status(da_options_set_int(handle, "maximum depth", 15), "options: max_depth");
     check_status(da_options_set_string(handle, "scoring function", "gini"), "options: criterion");
     check_status(da_options_set_int(handle, "seed", 42), "options: seed");
     check_status(da_options_set_string(handle, "features selection", "sqrt"), "options: features selection");
 
-    fprintf(stderr, "[DIAG] Setting training data (n_train=%ld, n_feat=%ld, ldx=%ld)...\n", n_train, n_feat, n_train);
+    fprintf(stderr, "Setting training data (n_train=%ld, n_feat=%ld, ldx=%ld)...\n", n_train, n_feat, n_train);
     check_status(da_forest_set_training_data_s(handle, n_train, n_feat, n_cls, X_tr_colmajor.data(), n_train, y_tr.data()), "da_forest_set_training_data_s", handle);
 
-    fprintf(stderr, "[DIAG] Starting training...\n");
+    fprintf(stderr, "Starting training...\n");
     auto t0 = std::chrono::high_resolution_clock::now();
     check_status(da_forest_fit_s(handle), "da_forest_fit_s", handle);
     auto t1 = std::chrono::high_resolution_clock::now();
-    fprintf(stderr, "[DIAG] Training completed.\n");
+    fprintf(stderr, "Training completed.\n");
     std::cout << "Training completed in " << std::chrono::duration<double>(t1 - t0).count() << " seconds." << std::endl;
 
-    fprintf(stderr, "\n[DIAG] Extracting feature importances...\n");
+    fprintf(stderr, "\nExtracting feature importances...\n");
     da_result query = da_feature_importances;
     da_int importances_dim = 1;
     std::vector<float> dummy_vec(1);
@@ -143,13 +143,13 @@ int main() {
         std::cerr << "ERROR: Failed to retrieve the correct dimension for feature importances." << std::endl;
     }
 
-    fprintf(stderr, "\n[DIAG] Starting prediction...\n");
+    fprintf(stderr, "\nStarting prediction...\n");
     float score = 0.0f;
     check_status(da_forest_score_s(handle, n_test, n_feat, X_te_colmajor.data(), n_test, y_te.data(), &score), "da_forest_score_s", handle);
     std::cout << "Test accuracy: " << std::fixed << std::setprecision(4) << score << std::endl;
 
-    fprintf(stderr, "[DIAG] Destroying handle...\n");
+    fprintf(stderr, "Destroying handle...\n");
     da_handle_destroy(&handle);
-    fprintf(stderr, "[DIAG] Program End.\n");
+    fprintf(stderr, "Program End.\n");
     return 0;
 }

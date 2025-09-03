@@ -9,7 +9,6 @@ from sklearn.model_selection import train_test_split
 from aoclda.decision_forest import decision_forest as random_forest
 
 def calculate_accuracy(y_true, y_pred):
-    """Calculates the accuracy of predictions."""
     return np.sum(y_pred == y_true) / len(y_true)
 
 if __name__ == "__main__":

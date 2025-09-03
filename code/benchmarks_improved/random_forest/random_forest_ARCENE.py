@@ -9,13 +9,11 @@ from aoclda.decision_forest import decision_forest as random_forest
 
 
 def load_data(data_path, labels_path):
-    """Loads Arcene data and labels from text files."""
     X = np.loadtxt(data_path, dtype=np.float32)
     y = np.loadtxt(labels_path, dtype=np.int32)
     return X, y
 
 def calculate_accuracy(y_true, y_pred):
-    """Calculates the accuracy of predictions."""
     return np.sum(y_pred == y_true) / len(y_true)
 
 if __name__ == "__main__":

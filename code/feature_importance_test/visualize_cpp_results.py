@@ -37,12 +37,12 @@ try:
         env=env
     )
 except subprocess.CalledProcessError as e:
-    print("\n--- C++ EXECUTABLE FAILED ---")
+    print("\n-- C++ EXECUTABLE FAILED ---")
     print("The C++ program exited with an error.")
     print(f"Return Code: {e.returncode}")
-    print("\n----- C++ STDOUT -----")
+    print("\n---- C++ STDOUT -----")
     print(e.stdout)
-    print("\n----- C++ STDERR -----")
+    print("\n----- C++ STDERR ----")
     print(e.stderr)
     exit(1)
 

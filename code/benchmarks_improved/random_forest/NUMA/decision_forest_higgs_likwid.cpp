@@ -15,7 +15,6 @@
 #define HIGGS_CSV_PATH "/nobackup/wsgp73/HIGGS.csv"
 #endif
 
-// (Your load_higgs_csv function remains the same)
 bool load_higgs_csv(const std::string &path,
                     std::vector<std::vector<float>> &features,
                     std::vector<int> &labels) {
@@ -81,7 +80,6 @@ int main() {
     da_options_set_int(f, "logging", 1);
     da_forest_set_training_data_s(f, n_train, n_feat, n_cls, Xtr_cm.data(), n_train, y_tr_data);
 
-    // FIXED: Replaced non-breaking spaces with normal spaces
     da_options_set_int(f, "number of trees", 1);
     da_options_set_int(f, "maximum depth", 35);
     da_options_set_int(f, "node minimum samples", 10);
@@ -96,7 +94,6 @@ int main() {
     auto t1 = std::chrono::high_resolution_clock::now();
     std::cout << "Training time: " << std::chrono::duration<double>(t1 - t0).count() << " s\n";
 
-    // --- NEW SECTION: CREATE A LARGE TEST SET TO BUST THE CACHE ---
     const long long L3_CACHE_SIZE = 256 * 1024 * 1024;
     const long long TARGET_SIZE = 4 * L3_CACHE_SIZE;
     long long test_set_bytes = (long long)n_test * n_feat * sizeof(float);
@@ -111,7 +108,6 @@ int main() {
     std::vector<int> y_te_large(n_test_large);
 
     for (int i = 0; i < replication_factor; ++i) {
-        // FIXED: Replaced std::copy with a proper loop to flatten the 2D data
         for (int j = 0; j < n_test; ++j) {
             // Calculate the starting position for the current replication
             size_t dest_offset = (size_t)(i * n_test + j) * n_feat;

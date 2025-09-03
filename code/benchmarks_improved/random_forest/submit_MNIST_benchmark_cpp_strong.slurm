@@ -9,7 +9,7 @@ CPP_SOURCE_FILE="random_forest_mnist.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "Please ensure the C++ runner file is in the same directory as this script."
+    echo "Ensure the C++ runner file is in the same directory as this script."
     exit 1
 fi
 
@@ -31,7 +31,6 @@ module load gcc/11.2
 module load aocl
 module load likwid
 
-# Set environment variables for OpenMP and library paths
 export OMP_NUM_THREADS=\${SLURM_CPUS_PER_TASK}
 export OPENSSL3_ROOT=/home/wsgp73/openssl3
 export AOCL_ROOT=/home/wsgp73/aocl/5.0.0/gcc
@@ -39,7 +38,6 @@ export AOCLDA_ROOT=/home/wsgp73/miscada-dissertation/code/aocl-data-analytics/bu
 export LIKWID_ROOT=/apps/developers/libraries/likwid/5.2.0/1/default
 OPENSSL_LIB_DIR=\${OPENSSL3_ROOT}/lib64
 
-# Define a unique name for the executable based on thread count
 EXECUTABLE_NAME="mnist_forest_test_\${OMP_NUM_THREADS}"
 
 echo "--- COMPILING C++ MNIST TEST for \${OMP_NUM_THREADS} threads ---"

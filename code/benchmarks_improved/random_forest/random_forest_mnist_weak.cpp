@@ -10,7 +10,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <iomanip>
-#include <cstdlib> // For getenv
+#include <cstdlib>
 
 #ifndef MNIST_DIR
 #define MNIST_DIR "/nobackup/wsgp73"
@@ -81,7 +81,7 @@ int main() {
 
     std::cout << "Running with " << n_threads << " threads." << std::endl;
     std::cout << "Weak Scaling: Using " << n_train_weak << " of " << MAX_TRAIN_SAMPLES << " training samples.\n" << std::endl;
-    // --- WEAK SCALING END ---
+    // --- WEAK SCALING END!!!!---
 
 
     int n_train_full, n_test, rows, cols, dummy;

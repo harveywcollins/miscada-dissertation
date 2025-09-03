@@ -9,7 +9,7 @@
 #include <stdexcept>
 #include <iomanip>
 #include <cmath>
-#include <cstdlib> // For atof
+#include <cstdlib>
 
 #ifndef HIGGS_CSV_PATH
 #define HIGGS_CSV_PATH "/nobackup/wsgp73/HIGGS.csv"
@@ -24,7 +24,7 @@ bool load_higgs_csv(const std::string &path,
         return false;
     }
 
-    std::cout << "Loading data from " << path << ". This may take a moment..." << std::endl;
+    std::cout << "Loading data from " << path << ". Moments later" << std::endl;
 
     std::string line;
     while (std::getline(ifs, line)) {
@@ -35,7 +35,6 @@ bool load_higgs_csv(const std::string &path,
         std::getline(ss, cell, ',');
         labels.push_back(std::stoi(cell));
 
-        // The rest are features
         std::vector<float> feature_row;
         while(std::getline(ss, cell, ',')) {
             feature_row.push_back(std::stof(cell));
@@ -46,7 +45,6 @@ bool load_higgs_csv(const std::string &path,
 }
 
 int main(int argc, char *argv[]) {
-    // Check for the data fraction command-line argument
     if (argc != 2) {
         std::cerr << "Usage: " << argv[0] << " <data_fraction>" << std::endl;
         return 1;

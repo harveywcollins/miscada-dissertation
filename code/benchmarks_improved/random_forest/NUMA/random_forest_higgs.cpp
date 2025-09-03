@@ -23,7 +23,7 @@ bool load_higgs_csv(const std::string &path,
         return false;
     }
 
-    std::cout << "Loading data from " << path << ". This may take a moment..." << std::endl;
+    std::cout << "Loading data from " << path << ". Moments later..." << std::endl;
 
     std::string line;
     while (std::getline(ifs, line)) {
@@ -132,11 +132,11 @@ int main() {
     std::cout << "Predicting on test set...\n";
     std::vector<int> y_pred(n_test);
     if (da_forest_predict_s(f,
-            /* n_rows   = */ n_test,
-            /* n_cols   = */ n_feat,
-            /* X        = */ Xte_cm.data(),
-            /* stride   = */ n_test,
-            /* y_pred   = */ y_pred.data()
+            /* n_rows = */ n_test,
+            /* n_cols = */ n_feat,
+            /* X = */ Xte_cm.data(),
+            /* stride = */ n_test,
+            /* y_pred = */ y_pred.data()
         ) != da_status_success)
     {
         std::cerr << "ERROR: da_forest_predict_s\n";

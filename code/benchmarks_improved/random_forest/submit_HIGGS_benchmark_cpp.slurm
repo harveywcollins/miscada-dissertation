@@ -7,7 +7,7 @@ CPP_SOURCE_FILE="random_forest_higgs.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "Please ensure the C++ runner file is in the same directory as this script."
+    echo "Ensure the C++ runner file is in the same directory as this script."
     exit 1
 fi
 

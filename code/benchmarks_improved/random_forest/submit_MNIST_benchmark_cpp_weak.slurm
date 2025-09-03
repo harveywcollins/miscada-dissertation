@@ -10,7 +10,7 @@ CPP_SOURCE_FILE="random_forest_mnist_weak.cpp"
 # Check if the C++ source file exists
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "Please ensure the C++ runner file is in the same directory as this script."
+    echo "Ensure the C++ runner file is in the same directory as this script."
     exit 1
 fi
 
@@ -39,7 +39,6 @@ export AOCLDA_ROOT=/home/wsgp73/miscada-dissertation/code/aocl-data-analytics/bu
 export LIKWID_ROOT=/apps/developers/libraries/likwid/5.2.0/1/default
 OPENSSL_LIB_DIR=\${OPENSSL3_ROOT}/lib64
 
-# Define a unique name for the executable based on thread count
 EXECUTABLE_NAME="mnist_forest_weak_test_\${OMP_NUM_THREADS}"
 
 echo "--- COMPILING C++ MNIST WEAK SCALING TEST for \${OMP_NUM_THREADS} threads ---"

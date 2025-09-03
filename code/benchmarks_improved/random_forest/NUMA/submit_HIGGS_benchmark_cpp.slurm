@@ -7,7 +7,7 @@ CPP_SOURCE_FILE="random_forest_higgs.cpp"
 
 if [ ! -f "${CPP_SOURCE_FILE}" ]; then
     echo "ERROR: C++ source file '${CPP_SOURCE_FILE}' not found."
-    echo "Please ensure the C++ runner file is in the same directory as this script."
+    echo "Ensure the C++ runner file is in the same directory as this script."
     exit 1
 fi
 
@@ -23,13 +23,11 @@ for NT in 1 2 4 8 16 32 64 128; do
 #SBATCH --cpus-per-task=${NT}
 #SBATCH --mem=32G
 
-# Purge and load necessary modules for the compilation and execution environment.
 module purge
 module load gcc/11.2
 module load aocl
 module load likwid
 
-# Set environment variables required by the application and its libraries.
 export OMP_NUM_THREADS=\${SLURM_CPUS_PER_TASK}
 export OPENSSL3_ROOT=/home/wsgp73/openssl3
 export AOCL_ROOT=/home/wsgp73/aocl/5.0.0/gcc
@@ -62,7 +60,7 @@ if [ \$? -ne 0 ]; then
 fi
 
 echo "--- RUNNING C++ EXECUTABLE ---"
-echo "Applying memory interleave policy across all NUMA nodes."
+echo "Applying memory interleave policy across all NUMA nodes!!!"
 numactl --interleave=all ./\${EXECUTABLE_NAME}
 
 echo "--- JOB COMPLETE ---"

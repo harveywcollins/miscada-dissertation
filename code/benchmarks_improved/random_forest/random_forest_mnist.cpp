@@ -15,7 +15,6 @@
 #define MNIST_DIR "/nobackup/wsgp73"
 #endif
 
-// Helper function to read a 32-bit big-endian integer from the file stream.
 static uint32_t readUint32(std::ifstream &ifs) {
     unsigned char b[4];
     ifs.read(reinterpret_cast<char*>(b), 4);
@@ -155,7 +154,7 @@ int main() {
     
     std::cout << "\nStarting training..." << std::endl;
     
-    // Train the model and measure time
+    // Train the model
     auto t0 = std::chrono::high_resolution_clock::now();
     if (da_forest_fit_s(f) != da_status_success) {
         std::cerr << "ERROR: da_forest_fit_s\n";

@@ -17,7 +17,7 @@
 
 void check_status(da_status status, const std::string& func_name, da_handle handle = nullptr) {
     if (func_name == "get_result (size query)" && status == da_status_invalid_array_dimension) {
-        fprintf(stderr, "[DIAG] Received expected status 'da_status_invalid_array_dimension'. This is correct.\n");
+        fprintf(stderr, "Received expected status 'da_status_invalid_array_dimension'.\n");
         return;
     }
     
@@ -60,7 +60,7 @@ bool load_higgs_csv(const std::string &path,
 }
 
 int main() {
-    printf("[INFO] Starting HIGGS Dataset Feature Importance Test\n");
+    printf("Starting HIGGS Dataset Feature Importance Test\n");
 
     std::vector<std::vector<float>> all_features_rm; // Row-major
     std::vector<int> all_labels;
@@ -76,7 +76,7 @@ int main() {
     int n_total = all_labels.size();
     int n_features = all_features_rm[0].size();
     int n_cls = *std::max_element(all_labels.begin(), all_labels.end()) + 1;
-    printf("[INFO] Data loading complete. Samples: %d, Features: %d\n", n_total, n_features);
+    printf("Data loading complete. Samples: %d, Features: %d\n", n_total, n_features);
 
     std::vector<std::string> feature_names;
     for (int i = 0; i < n_features; ++i) {
@@ -88,7 +88,7 @@ int main() {
     int n_test = n_total - n_train;
 
     // Transpose data to column-major format
-    printf("[INFO] Transposing data to column-major format...\n");
+    printf("Transposing data to column-major format...\n");
     std::vector<float> X_tr_colmajor((size_t)n_train * n_features);
     for (int i = 0; i < n_train; ++i) {
         for (int j = 0; j < n_features; ++j) {
@@ -105,21 +105,21 @@ int main() {
     int* y_tr_data = all_labels.data();
     int* y_te_data = all_labels.data() + n_train;
 
-    printf("[INFO] Initializing AOCL-DA handle...\n");
+    printf("Initializing AOCL-DA handle...\n");
     da_handle handle = nullptr;
     check_status(da_handle_init_s(&handle, da_handle_decision_forest), "da_handle_init_s");
 
-    printf("[INFO] Setting options...\n");
+    printf("Setting options...\n");
     check_status(da_options_set_int(handle, "number of trees", 1), "options: n_trees");
     check_status(da_options_set_int(handle, "maximum depth", 15), "options: max_depth");
     check_status(da_options_set_string(handle, "scoring function", "entropy"), "options: criterion");
     check_status(da_options_set_int(handle, "seed", 42), "options: seed");
     check_status(da_options_set_int(handle, "maximum features", static_cast<int>(std::sqrt(n_features))), "options: max_features");
 
-    printf("[INFO] Setting training data...\n");
+    printf("Setting training data...\n");
     check_status(da_forest_set_training_data_s(handle, n_train, n_features, n_cls, X_tr_colmajor.data(), n_train, y_tr_data), "da_forest_set_training_data_s", handle);
 
-    printf("[INFO] Starting training...\n");
+    printf("Starting training...\n");
     auto t0 = std::chrono::high_resolution_clock::now();
     check_status(da_forest_fit_s(handle), "da_forest_fit_s", handle);
     auto t1 = std::chrono::high_resolution_clock::now();
@@ -156,7 +156,7 @@ int main() {
     check_status(da_forest_score_s(handle, n_test, n_features, X_te_colmajor.data(), n_test, y_te_data, &score), "da_forest_score_s", handle);
     printf("Test accuracy: %.4f\n", score);
 
-    printf("\n[INFO] Destroying handle...\n");
+    printf("\nDestroying handle...\n");
     da_handle_destroy(&handle);
     return 0;
 }
